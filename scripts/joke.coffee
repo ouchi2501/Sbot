@@ -17,5 +17,5 @@ module.exports = (robot) ->
     msg.send "
     お前がしね\n
     https://www.google.co.jp/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAcQjRxqFQoTCKOt99iTkskCFcuSlAodwLQE4g&url=http%3A%2F%2Fmienaiblue.blog.fc2.com%2Fblog-entry-111.html&psig=AFQjCNECFF8h7n2v9KAsZ9dRxpAhI-J6aA&ust=1447667461948939"
-  robot.hear /誰のせい$/i, (msg) ->
+  robot.hear /だれのせいだ?$/i, (msg) ->
     msg.send "大野一択"
