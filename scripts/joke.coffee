@@ -22,3 +22,5 @@ module.exports = (robot) ->
   robot.hear /wiki (.*)/i, (msg) ->
     keyword = encodeURIComponent msg.match[1]
     msg.send "https://ja.wikipedia.org/wiki/#{keyword}"
+  robot.hear /大野/i, (msg) ->
+    msg.send "じゅんじゅんムニムニでちー"
