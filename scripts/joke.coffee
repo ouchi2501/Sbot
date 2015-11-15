@@ -24,3 +24,5 @@ module.exports = (robot) ->
     msg.send "https://ja.wikipedia.org/wiki/#{keyword}"
   robot.hear /大野/i, (msg) ->
     msg.send "じゅんじゅんムニムニでちー"
+  robot.hear /my job$/i, (msg) ->
+   15     msg.send msg.random ["すっぴん", "Knight", "Monk", "Thief", "白魔道士", "黒魔道士","青魔道士","Berserker","魔法剣士","時魔道士","召喚士","赤魔道士","ものまねし","Ninja","魔獣使い","風水士","吟遊詩人","狩人","Samurai","竜騎士","薬師","踊り子","剣闘士","砲撃士","予言士","ネクロマンサー"]
