@@ -22,9 +22,5 @@ module.exports = (robot) ->
   robot.hear /wiki (.*)/i, (msg) ->
     keyword = encodeURIComponent msg.match[1]
     msg.send "https://ja.wikipedia.org/wiki/#{keyword}"
-  robot.hear /大野/i, (msg) ->
-    msg.send "ねえ知ってる？大野のナニは爪楊枝の13分の1に匹敵するんだって！"
-  robot.hear /猪狩/i, (msg) ->
-    msg.send "ねえ知ってる？猪狩の顔の広さは東京ドーム13個分に匹敵するんだって！"
   robot.hear /my job$/i, (msg) ->
     msg.send msg.random ["すっぴん", "Knight", "Monk", "Thief", "白魔道士", "黒魔道士","青魔道士","Berserker","魔法剣士","時魔道士","召喚士","赤魔道士","ものまねし","Ninja","魔獣使い","風水士","吟遊詩人","狩人","Samurai","竜騎士","薬師","踊り子","剣闘士","砲撃士","予言士","ネクロマンサー"]
